@@ -1,56 +1,125 @@
-import random
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mùa Hè, Nơi Tận Hưởng Những Kỷ Niệm Đáng Nhớ</title>
+  <style>
+     body {
+            background-color: #F4EAD3;
+            background-image: url('path/to/black-boba-image.png');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: auto 100px; /* Height of 100px, width auto-adjusted */
+     }
+    body {
+      font-family: 'Livvic', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #f5ede1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      color: #5e463b;
+      margin-bottom: 20px;
+    }
+    
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h2 {
+      font-size: 28px;
+      color: #5e463b;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 18px;
+      color: #5e463b;
+      margin-bottom: 20px;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>Mùa Hè, Nơi Tận Hưởng Những Kỷ Niệm Đáng Nhớ</h1>
+    <h3>Nguyễn Như Hoàng Bách - Trịnh Lê Hưng</h3>
+  </div>
 
-# Tạo bộ bài
-suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
-ranks = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
-deck = [(rank, suit) for suit in suits for rank in ranks]
-random.shuffle(deck)
+  <div class="content">
+    <h2>I. Mùa hè là thời điểm tuyệt vời để tận hưởng bãi biển</h2>
+    <p>Mùa hè là thời điểm tuyệt vời để tận hưởng bãi biển, với những ngày nắng chói chang, nước biển trong xanh và cát trắng. Bãi biển trở thành điểm đến nổi bật của nhiều người, cùng gia đình và bạn bè tận hưởng thời điểm tắm nắng, bơi lội, đi bộ trên bờ biển hay ăn uống, giải trí.
 
-# Hàm tính điểm bài
-def hand_value(hand):
-    values = [rank if rank in ['2', '3', '4', '5', '6', '7', '8', '9', '10'] else 10 if rank in ['Jack', 'Queen', 'King'] else 11 if rank == 'Ace' else 0 for rank, _ in hand]
-    total = sum(values)
-    if total > 21 and any(value == 11 for value in values):
-        total -= 10
-    return total
+      Mùa hè còn đánh dấu sự bắt đầu của nhiều mùa kỳ nghỉ, nơi mọi người có thể nghỉ ngơi sau những ngày làm việc vất vả, đồng thời là thời điểm để các bạn trẻ gặp gỡ, làm quen với bạn bè mới. Những tháng mùa hè có thể trở thành những cuộc phiêu lưu đầy thú vị, với những trải nghiệm mới mẻ, cho những kỉ niệm đáng nhớ.
+      
+      Ngoài ra, bãi biển còn có thể trở thành sân chơi tuyệt vời cho các em bé. Chúng có thể chơi đùa trên bờ cát, ngắm nhìn những con sò biển hay tìm kiếm các sinh vật nhỏ, đồng thời học hỏi về môi trường tự nhiên.
+      
+      Mùa hè trên bãi biển với những trải nghiệm độc đáo, cùng sự tươi vui và đầy trẻ trung cùng gia đình, bạn bè, là điều mà mọi người vẫn muốn tận hưởng và trải nghiệm trong những mùa hè sắp tới.</p>
 
-# Luật chơi
-player_hand = []
-dealer_hand = []
-for _ in range(2):
-    player_hand.append(deck.pop())
-    dealer_hand.append(deck.pop())
+      <img src="https://qph.cf2.poecdn.net/main-155979022_38306304270_3_1.png?w=1024&h=1024" width="512" height="512" alt="Image">
+      <p>Thời gian này, nắng gắt và rực rỡ, cây cối đâm chồi nhú mọc hoa, trời trong và gió dịu nhẹ, đó là những thứ tạo ra thời tiết mùa hè. Mỗi mùa có một vẻ đẹp riêng, nhưng mùa hè mang lại cảm giác tự do và thoải mái. Người ta thường dành nhiều thời gian cho các hoạt động giải trí và gặp gỡ bạn bè trong mùa hè. Mùa hè mang đến cho chúng ta một cảm giác mới mẻ và tuyệt vời.</p>
+    <h2>II. Tham gia các hoạt động ngoài trời</h2>
+    <p>Khi mùa hè đến với thời tiết ấm áp và những ngày dài hơn, đó là cơ hội hoàn hảo để tận hưởng không gian ngoài trời. Các hoạt động phổ biến bao gồm việc ghé thăm bãi biển, nơi bạn có thể bơi lội hoặc thư giãn bên biển, đến leo núi, cho phép bạn khám phá vẻ đẹp thiên nhiên bằng đôi chân. Đối với những người thích trải nghiệm gần gũi hơn với thiên nhiên, cắm trại cung cấp cơ hội độc đáo để trải qua một đêm hoặc nhiều đêm dưới ánh sao, xa xa khỏi sự ồn ào của cuộc sống thành phố.</p>
+    <img src="https://qph.cf2.poecdn.net/main-155979022_38314710286_3_1.png?w=1024&h=1024" width="500" height="512" alt="Image">
+    <p>Mùa hè, với thời tiết ấm áp và những ngày dài hơn, là lời mời để ra khỏi nhà và tham gia vào nhiều hoạt động ngoài trời khác nhau. Đối với nhiều người, mùa hè đồng nghĩa với việc đi biển. Dù là bơi lội trong nước mát rượi, chơi bóng chuyền biển, hay chỉ đơn giản là thư giãn trên cát, biển là điểm đến mùa hè truyền thống. Các môn thể thao nước, như lướt sóng, đi kayak và chèo SUP, cũng trở nên đặc biệt hấp dẫn trong những tháng mùa hè, mang lại cả niềm vui và sự rèn luyện thể lực.</p>
 
-print(f"Your hand: {', '.join(card[0] + ' of ' + card[1] for card in player_hand)}")
-print(f"Dealer's hand: {', '.join(card[0] + ' of ' + card[1] for card in dealer_hand[:1])}, [hidden card]")
+    <h2>III. Những kỷ niệm đáng nhớ</h2>
+    <p>Khi cái rét của mùa đông dần tan biến và thế giới bắt đầu hiện ra sự sống, một mùa hè ấm áp và đầy niềm vui đến. Đó là thời điểm mà ánh mặt trời ban tặng chúng ta những chuyến thăm kéo dài nhất, tô điểm bầu trời với những sắc màu vàng và cam, tạo ra những bóng tối dài và đùa nghịch khi ngày trở thành hoàng hôn.
 
-while True:
-    player_choice = input("Would you like to 'hit' or 'stand'? ")
-    if player_choice.lower() == 'hit':
-        player_hand.append(deck.pop())
-        print(f"Your hand: {', '.join(card[0] + ' of ' + card[1] for card in player_hand)}")
-        if hand_value(player_hand) > 21:
-            print("Bust! You lose.")
-            break
-    elif player_choice.lower() == 'stand':
-        break
-    else:
-        print("Invalid choice. Please try again.")
+      Những kỷ niệm về mùa hè thường là những kỷ niệm ngọt ngào nhất, tràn đầy những ma thuật mà chúng ta mang theo suốt đời. Có thể đó là cảm giác của tia nắng ấm áp chạm vào da, tiếng lá xào xạc dịu dàng trong gió, hay thậm chí là dàn nhạc của ve sầu, như một bản nhạc phim điện ảnh cho mùa hè sống động này.</p>
 
-dealer_value = hand_value(dealer_hand)
-while dealer_value < 17:
-    dealer_hand.append(deck.pop())
-    dealer_value = hand_value(dealer_hand)
+      <img src="https://qph.cf2.poecdn.net/main-155979022_38318474510_3_1.png?w=1024&h=1024" width="256" height="256" alt="Image">
+      <img src="https://qph.cf2.poecdn.net/main-155979022_38318648590_2_1.png?w=1024&h=1024" width="256" height="256" alt="Image">
+      <p>Rồi khi chúng ta trưởng thành, bản chất của những kỷ niệm mùa hè có thể thay đổi, nhưng chúng vẫn giữ nguyên giá trị quý giá. Những kỷ niệm đó có thể là những buổi tiệc nướng mùa hè cùng bạn bè, những chuyến đi đến những nơi chưa biết đến, hoặc những buổi tối yên bình dành cho việc đọc sách trên hiên nhà được tắm ánh nắng mặt trời.
 
-print(f"Dealer's hand: {', '.join(card[0] + ' of ' + card[1] for card in dealer_hand)}")
-print(f"Your hand value: {hand_value(player_hand)}")
-print(f"Dealer's hand value: {dealer_value}")
+        Mùa hè, với sự ấm áp và ánh sáng của nó, có cách làm chậm lại thời gian một chút, cho phép chúng ta tạo ra những kỷ niệm mà chúng ta trân trọng, những kỷ niệm khiến chúng ta mỉm cười trong những ngày đông lạnh giá, nhắc nhở chúng ta về những ngày nắng tươi rực rỡ đang chờ đợi. Thực sự, những kỷ niệm mùa hè giống như một kho báu đầy những khoảnh khắc vàng, một minh chứng cho niềm vui và vẻ đẹp của cuộc sống.</p> 
+    <h2>IV. Trại hè</h2>
+    <p>Trại hè là một phần không thể thiếu của mùa hè, mang đến nhiều trải nghiệm đa dạng cho trẻ em và thanh thiếu niên. Thường được tổ chức trong kỳ nghỉ hè của trường học, trại hè cung cấp một sự kết hợp độc đáo giữa giáo dục, phiêu lưu và niềm vui.</p>
+      <h3>Các thể loại trại hè</h3>
+    <p>-Trại hè truyền thống: Những trại này cung cấp nhiều hoạt động khác nhau như bơi lội, nghệ thuật và thủ công, các môn thể thao đồng đội và khám phá thiên nhiên. Mục tiêu của chúng là thúc đẩy sự phát triển cá nhân, tình bạn và tình yêu với thiên nhiên.</p>
 
-if hand_value(player_hand) > 21:
-    print("Bust! You lose.")
-elif dealer_value > 21 or hand_value(player_hand) > dealer_value:
-    print("You win!")
-elif hand_value(player_hand) < dealer_value:
-    print("You lose.")
-else:
-    print("It's a push.")
+      <p>-Trại hè chuyên môn: Những trại này tập trung vào các sở thích hoặc kỹ năng cụ thể. Có trại thể thao, trại nghệ thuật, trại khoa học, trại âm nhạc và nhiều hơn nữa. Những trại này cung cấp hướng dẫn sâu sắc và thực hành trong lĩnh vực được lựa chọn, thường do các chuyên gia dẫn dắt.</p>
+      
+      <p>-Trại phiêu lưu ngoài trời: Dành cho những người tìm kiếm cảm giác mạnh, những trại này cung cấp các hoạt động hấp dẫn như leo núi, rafting trên dòng nước sôi, đi bộ đường dài và cắm trại. Những trại này nhằm mục đích giảng dạy kỹ năng sống, nhận thức môi trường và lãnh đạo.</p>
+      
+      <p>-Trại giáo dục và học thuật: Những trại này được thiết kế để kích thích sự phát triển trí tuệ và tính tò mò. Chúng có thể tập trung vào lĩnh vực như lập trình, robot, viết lách hoặc ngoại ngữ.</p>
+    
+      <p>-Trại ban ngày và trại nội trú: Trại ban ngày thường diễn ra tại địa phương và các em trở về nhà vào mỗi buổi tối. Trại nội trú hoặc "trại qua đêm" liên quan đến việc lưu trú qua đêm trong một khoảng thời gian, mang đến trải nghiệm sâu sắc hơn.</p>
+      <img src="https://qph.cf2.poecdn.net/main-156213280_38746495008_2_1.png?w=1024&h=1024" width="512" height="512" alt="Camp">
+      <h2>V. Trang web đăng kí trại hè</h2>
+
+      <ul>
+        <li><a href="https://www.campminder.com/">CampMinder</a></li>
+        <li><a href="https://www.activenetwork.com/">Active Network</a></li>
+        <li><a href="https://www.ultracamp.com/">UltraCamp</a></li>
+        <li><a href="https://www.regpacks.com/">Regpack</a></li>
+        <li><a href="https://www.campdoc.com/">CampDoc</a></li>
+        <li><a href="https://www.campbrain.com/">CampBrain</a></li>
+        <li><a href="https://www.campmanagement.com/">CampSite by EZFacility</a></li>
+        <li><a href="https://www.bunk1.com/">Bunk1</a></li>
+        <li><a href="https://www.campium.com/">Campium</a></li>
+        <li><a href="https://www.campwise.com/">CampWise</a></li>
+      </ul>
+          <h5>Nhóm biên soạn: Onionium</h5>
+  </div>
+
+  <script>
+    // JavaScript cho trang bài báo
+    // Không có mã JavaScript cụ thể cho trang bài báo này
+  </script>
+</body>
+</html>
